@@ -1,6 +1,6 @@
 # 📚 Herencia en Java 📝
 
-Este es un programa simple en Java para aprender el uso de la herencia en java se tendran 4 clases Padre, Persona Alumno. y Docente
+Este es un programa simple en Java para aprender el uso de la herencia en java se tendran 3 clases Persona Alumno. y Docente
 
 ## Contribuciones 💡
 
