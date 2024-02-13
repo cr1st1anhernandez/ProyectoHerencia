@@ -2,10 +2,15 @@ public class Alumno extends Persona {
   private String email;
   private int grupo;
 
-  public Alumno(String nombre, int edad, String email, int grupo) {
-    super(nombre, edad);
+  public Alumno(String nombre, int edad, char genero,  String email, int grupo) {
+    super(nombre, edad, genero);
     this.email = email;
     this.grupo = grupo;
+  }
+
+  @Override
+  public String toString() {
+    return "Alumno [id=" + getId() + ", nombre=" + getNombre() + ", edad=" + getEdad() + ", genero=" + getGenero() + ", email=" + email + ", grupo=" + grupo + "]";
   }
 
   public String getEmail() {

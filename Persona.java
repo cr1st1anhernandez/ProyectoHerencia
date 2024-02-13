@@ -5,10 +5,16 @@ public class Persona {
     private String nombre;
     private int edad;
     
-    public Persona(String nombre, int edad) {
+    public Persona(String nombre, int edad, char genero) {
         this.id = ++idCounter;
         this.nombre = nombre;
         this.edad = edad;
+        this.genero = genero;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona [id=" + id + ", nombre=" + nombre + ", edad=" + edad + ", genero=" + genero + "]";
     }
     
     public int getId() {
@@ -38,4 +44,5 @@ public class Persona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
 }
