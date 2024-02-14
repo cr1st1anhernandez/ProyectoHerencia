@@ -29,4 +29,23 @@ public class Operaciones {
       System.out.println("Error al crear el archivo");
     }
   }
+
+  public void guardar() {
+    try {
+      PrintWriter archivoAlumnos = new PrintWriter(new FileWriter("alumnos.txt"));
+      PrintWriter archivoDocentes = new PrintWriter(new FileWriter("docentes.txt"));
+      for (Persona persona : personas) {
+        if(persona instanceof Alumno) {
+          archivoAlumnos.println(persona);
+        } else if(persona instanceof Docente) {
+          archivoDocentes.println(persona);
+        }
+      }
+      archivoAlumnos.close();
+      archivoDocentes.close();
+    } catch (Exception e) {
+      System.out.println("Error al crear el archivo");
+    }
+  }
+
 }

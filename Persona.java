@@ -1,4 +1,4 @@
-public class Persona {
+public abstract class Persona {
     private static int idCounter = 0;
     private char genero;
     private int id;
@@ -14,7 +14,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona [id=" + id + ", nombre=" + nombre + ", edad=" + edad + ", genero=" + genero + "]";
+        return id + ", " + nombre + ", " + edad + ", " + genero;
     }
     
     public int getId() {
