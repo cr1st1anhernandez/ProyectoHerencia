@@ -10,7 +10,7 @@ public class Alumno extends Persona {
 
   @Override
   public String toString() {
-    return "Alumno [id=" + getId() + ", nombre=" + getNombre() + ", edad=" + getEdad() + ", genero=" + getGenero() + ", email=" + email + ", grupo=" + grupo + "]";
+    return "Alumno," + getId() + "," + getNombre() + "," + getEdad() + "," + getGenero() + "," + email + "," + grupo;
   }
 
   public String getEmail() {
